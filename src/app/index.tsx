@@ -14,10 +14,6 @@ export default function Index() {
         {/* <View style={styles.coralGlow} /> */}
         <SafeAreaView style={styles.safeArea} edges={["top", "bottom"]}>
           <View style={styles.content}>
-            <View style={styles.titleWrap}>
-              <Text style={styles.title}>Where pets and people</Text>
-              <Text style={styles.title}>share their stories</Text>
-            </View>
             <View style={styles.actions}>
               <SignInButton icon={<GoogleMark />} label="Sign in with Google" />
               <SignInButton icon={<Text style={styles.apple}></Text>} label="Sign in with Apple" />
@@ -26,7 +22,6 @@ export default function Index() {
               <Pressable><Text style={styles.account}>Have an account?</Text></Pressable>
             </View>
           </View>
-          <Text style={styles.sparkle}>✦</Text>
         </SafeAreaView>
       </ImageBackground>
     </View>
@@ -47,8 +42,6 @@ const styles = StyleSheet.create({
   coralGlow: { position: "absolute", top: "49%", bottom: 0, left: 0, right: 0, backgroundColor: "rgba(247, 106, 75, 0.62)" },
   safeArea: { flex: 1 },
   content: { flex: 1, justifyContent: "flex-end", paddingHorizontal: 30, paddingBottom: 36 },
-  titleWrap: { position: "absolute", left: 0, right: 0, bottom: 285, alignItems: "center" },
-  title: { color: "white", fontSize: 22, lineHeight: 29, letterSpacing: -0.7, fontWeight: "800", textAlign: "center", textShadowColor: "rgba(78,27,17,0.38)", textShadowOffset: { width: 0, height: 2 }, textShadowRadius: 3 },
   actions: { gap: 7 },
   button: { height: 44, backgroundColor: "#fff", borderRadius: 24, alignItems: "center", justifyContent: "center", flexDirection: "row", shadowColor: "#7d3c2b", shadowOpacity: 0.48, shadowRadius: 3, shadowOffset: { width: 0, height: 3 }, elevation: 4 },
   icon: { width: 30, alignItems: "center", justifyContent: "center" },
@@ -60,5 +53,4 @@ const styles = StyleSheet.create({
   or: { color: "#ffe0d0", fontSize: 17, fontWeight: "400" },
   input: { height: 50, borderRadius: 6, borderWidth: 1, borderColor: "#d3d9dc", backgroundColor: "rgba(252, 255, 255, 0.95)", paddingHorizontal: 12, color: "#24272a", fontSize: 16, textAlign: "center" },
   account: { color: "#fff", fontSize: 15, fontWeight: "600", textAlign: "center", marginTop: 13, textShadowColor: "rgba(91, 38, 24, 0.35)", textShadowOffset: { width: 0, height: 1 }, textShadowRadius: 2 },
-  sparkle: { position: "absolute", right: 27, bottom: 22, color: "#ffe3d5", fontSize: 46, lineHeight: 46 },
 });
